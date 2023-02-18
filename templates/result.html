@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" type="text/css" href="..\static\styles.css">
+    <body class="body">
+        <title>Result</title>
+        <textarea class="textarea">
+        {% for key, value in data.items() %}
+            {{key}} : {{value}}
+        {% endfor %}
+        Percentage : {{Percentage}}
+        FinalResult : {{FinalResult}}
+        </textarea>
+        <br>
+        <form action="/home" method="post" class>
+            <button name="home" type="submit">Home</button>
+        </form>
+    </body>
+</html>
